@@ -1,0 +1,164 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.desktop {
+  display: none;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;  
+}
+
+.top-navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+  .top-navbar li {
+    float: left;
+    padding: 1em;
+  }
+  .top-navbar li a {
+    color: #757575;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .top-navbar i {
+    font-size: 1.2em;
+  }
+  .float-right {
+    float: right !important;
+  }
+  .active {
+    border-bottom: 3px solid #4285F4;
+  }
+  .active a {
+    color: #4285F4 !important;
+  }
+  .sign-in {
+    border: 1px solid #757575;
+    padding: 0.4em 0.7em;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+  }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  main img {
+    max-width: 50%;
+  }
+  
+  #search-div {
+    border: 1.3px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5em;
+    width: 90%;
+    margin: 1.5em 0;
+    display: flex;
+  }
+    #search-div {
+      color: #757575;
+    }
+    input {
+      border: none;
+      flex-grow: 1;
+      margin: 0 0.5em;
+    }
+    input:focus {
+      outline: none;
+    }
+
+  a {
+    text-decoration: none;
+    color: #4285F4;
+  }
+
+  .footer {
+    color: #757575;
+    background-color: #F2F2F2;
+    padding: 0.1em;
+  }
+    .footer div:first-child {
+      border-bottom: 2px solid #E4E4E4;
+      padding-left: 0.5em;
+    }
+    .footer>p {
+      text-align: center;
+    }
+
+/* 
+###################
+##### DESKTOP #####
+###################
+*/
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .sign-in {
+    background-color: #4285F4;
+    color: #FFF;
+    border: none;
+    border-radius: 2px;
+  }
+
+  #search-div {
+    width: 35%;
+    padding: 1em;
+    border-radius: 30px;
+  }
+    #search-div:hover {
+      box-shadow: 0px 0px 5px 1px #CCC;
+    }
+
+  .buttons {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+
+  .buttons button{
+    padding: 0.7em 1em;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 5px;
+    color: #757575;
+    margin: 1.5em 0.3em;    
+  }
+
+  .buttons button:hover {
+    border-color: #757575;    
+  }
+
+  .footer>p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+  }
+
+  a {
+    color: blue;
+  }
+    a:hover {
+      text-decoration: underline;
+    }
+
+}
